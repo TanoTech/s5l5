@@ -1,0 +1,303 @@
+/* generali */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 70px;
+    margin-top: 2.5rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+/* header navigazione*/
+header {
+    background-color: rgb(255, 179, 21);
+    border-bottom: 2px solid black;
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 2rem;
+    border-bottom: 2px solid black;
+    z-index: 1000;
+}
+
+nav.scrolled {
+    background-color: white;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+   display: none;
+}
+
+#getStarted a {
+    color: white;
+}
+
+#getStarted {
+    display: flex;
+    background-color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+
+/* Section scomparsa*/
+
+#scomparsa {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 179, 21);
+    border-bottom: 2px solid black;
+    padding-top: 8rem;
+
+}
+
+#stayCurious {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+#stayCurious a {
+    color: white;
+  
+}
+
+#stayCurious button {
+    background-color: black;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 30px;
+    border: none;
+    margin-top: 1.8rem;
+    margin-bottom: 3rem;
+    padding: 0.5rem;
+}
+
+#animazione {
+    display: none;
+}
+
+/* section Trending*/
+
+#trending {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+    margin: 0.5rem;
+}
+
+#trending div {
+    display: flex;
+
+    margin-bottom: 0.2rem;
+}
+
+#trending div p {
+    color: grey;
+}
+
+.number {
+   font-size: 2rem;
+   padding: 1rem;
+   opacity: 0.3;
+   font-weight: bold;
+   margin: 0.
+}
+
+#trending h2,
+#trending h4,
+#articoli h2,
+#articoli h4 {
+    font-weight: bold;
+}
+
+#trending img {
+    border-radius: 50%;
+    width: 2rem;
+    margin-right: 0.5rem;
+}
+
+
+
+.anteprima {
+    display: flex;
+    flex-direction: column;
+}
+
+.dataLettura {
+   display: flex;
+   justify-content: space-between;
+   
+
+}
+
+/* contenitore discover e articoli*/
+
+#flexContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#discoverConLinkv,
+#link ul {
+    display: flex;
+    list-style: none;
+}
+
+/*section Discover*/
+
+.fuoriScheda {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+#discover {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+#discover a {
+    background-color: rgb(219, 218, 218);
+    padding: 0 1rem;
+}
+
+#link ul li {
+    display: none;
+}
+
+/* articoli*/
+
+#articoli {
+    margin: 1rem;
+}
+
+h4 img {
+    border-radius: 50%;
+    width: 2.5em;
+    margin-right: 0.5rem;
+}
+
+#articoli div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+
+}
+
+.testoLoghi {
+    display: flex;
+    flex-direction:column;
+}
+
+
+.dataTag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgArticolo { 
+    text-align: center; 
+}
+
+.imgArticolo img {
+    width: 200px;
+    height: 140px;
+
+}
+
+
+@media screen and (min-width:460px) {
+
+  
+    nav ul li:nth-child(4){
+        display: flex;
+        align-items: center;
+        margin: 0 1rem;
+    }
+    
+}
+
+@media screen and (min-width:655px) {
+
+
+    nav ul li {
+        display: flex;
+        align-items: center;
+        margin: 0 0.8rem;
+    }
+
+    #animazione {
+        display: flex;
+        width: 50vw;
+    }
+
+    #trending div {
+        flex: 0.5 0 50%
+    }
+
+    #link ul li {
+        display: flex
+    };
+}
+
+@media screen and (min-width:960px) {
+
+    #flexContainer {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+   #discover {
+    position: sticky;
+    top: 10rem;
+   }
+
+   #link ul li{
+    position: sticky 15rem;
+   }
+
+
+
+
+}

@@ -1,0 +1,375 @@
+/* generali */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+h1 {
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 70px;
+    margin-top: 2.5rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+/* header navigazione*/
+header {
+    background-color: rgb(255, 179, 21);
+    border-bottom: 2px solid black;
+    position: fixed;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 2rem;
+    border-bottom: 2px solid black;
+    z-index: 1000;
+}
+
+nav.scrolled {
+    background-color: white;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+   display: none;
+}
+
+#getStarted a {
+    color: white;
+}
+
+#getStarted {
+    display: flex;
+    background-color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+
+/* Section scomparsa*/
+
+#scomparsa {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 179, 21);
+    border-bottom: 2px solid black;
+    padding-top: 8rem;
+
+}
+
+#stayCurious {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+#stayCurious a {
+    color: white;
+  
+}
+
+#stayCurious button {
+    background-color: black;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 30px;
+    border: none;
+    margin-top: 1.8rem;
+    margin-bottom: 3rem;
+    padding: 0.5rem;
+}
+
+#animazione {
+    display: none;
+}
+
+/* section Trending*/
+
+#trending {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+    margin: 0.5rem;
+}
+
+#trending div {
+    display: flex;
+
+    margin-bottom: 0.2rem;
+}
+
+#trending div p {
+    color: grey;
+}
+
+.number {
+   font-size: 2rem;
+   padding: 1rem;
+   opacity: 0.3;
+   font-weight: bold;
+   margin: 0.
+}
+
+#trending h2,
+#trending h4,
+#articoli h2,
+#articoli h4 {
+    font-weight: bold;
+}
+
+#trending img {
+    border-radius: 50%;
+    width: 2rem;
+    margin-right: 0.5rem;
+}
+
+
+
+.anteprima {
+    display: flex;
+    flex-direction: column;
+}
+
+.dataLettura {
+   display: flex;
+   justify-content: space-between;
+   
+
+}
+
+/* contenitore discover e articoli*/
+
+#flexContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#discoverConLinkv,
+#link ul {
+    display: flex;
+    list-style: none;
+}
+
+/*section Discover*/
+
+.fuoriScheda {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+#discover {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem;
+    margin-left: 2rem;
+}
+
+#discover a {
+    border: 1px solid grey;
+    padding: 0 1rem;
+}
+
+#link ul li {
+    display: none;
+}
+
+/* articoli*/
+
+#articoli {
+    margin: 1rem;
+}
+
+h4 img {
+    border-radius: 50%;
+    width: 2.5em;
+    margin-right: 0.5rem;
+}
+
+#articoli div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+
+}
+
+.testoLoghi {
+    display: flex;
+    flex-direction:column;
+    flex: 1 0 65%;
+}
+
+
+.dataTag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem; 
+}
+
+
+.imgArticolo { 
+    text-align: center; 
+    flex: 0 1 35%;
+}
+
+.imgArticolo img {
+    width: 100px;
+    height: 60px;
+}
+
+.tag {
+    background-color: rgba(128, 128, 128, 0.345);
+    border-radius: 30px;
+    padding: 0 1rem
+    
+}
+
+
+@media screen and (min-width:460px) {
+
+  
+    nav ul li:nth-child(4){
+        display: flex;
+        align-items: center;
+        margin: 0 1rem;
+    }
+    
+    .imgArticolo img {
+        width: 140px;
+        height: 80px;
+    }
+
+}
+
+@media screen and (min-width:655px) {
+
+
+    .dataTag p {
+        margin-right: 3rem;
+    }
+
+
+    nav ul li {
+        display: flex;
+        align-items: center;
+        margin: 0 0.8rem;
+    }
+
+    #animazione {
+        display: flex;
+        animation: fadeInOut 1s ease-in-out infinite;
+    }
+
+    @keyframes fadeInOut {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    #trending div {
+        flex: 0.5 0 50%
+    }
+
+    .imgArticolo img {
+        width: 200px;
+        height: 140px;
+
+    }
+}
+
+@media screen and (min-width:1000px) {
+
+    h1 {
+        font-size: 6rem;
+        margin-bottom: 3rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+
+    }
+
+
+    #flexContainer {
+        display: flex;
+        flex-direction: row-reverse;;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+
+    #stayCurious {
+        margin-left: 5rem;
+    }
+
+    #link ul li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #discoverConLink {
+        flex:  0 0 33%;
+        flex-wrap: wrap;
+        margin-right: 2rem;
+    }
+
+    #articoli {
+        flex: 0 0 66%;
+    }
+    #discover {
+        position: sticky;
+        top: 6rem;
+        margin: 0;
+        margin-right: 2em;
+    
+    }
+    
+    #link {
+        position: sticky;
+        top: 17rem;
+    }
+
+    #link ul {
+        display: flex;
+        flex-wrap: wrap;
+        border-top: 2px solid grey;
+        margin-right: 5rem;
+    }
+
+    #link ul li {
+        margin-right: 0.5rem;
+    }
+
+}
